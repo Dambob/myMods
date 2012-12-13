@@ -78,7 +78,7 @@ public class ContainerTiny extends Container
             //this assumes only 1 slot, for inventories with > 1 slots, check out the Chest Container.
             if (slot < numSlots) 
             {
-                if (!mergeItemStack(stackInSlot, 0, inventorySlots.size(), true))
+                if (!mergeItemStack(stackInSlot, numSlots - 1, inventorySlots.size(), true))
                 {
                     return null;
                 }
