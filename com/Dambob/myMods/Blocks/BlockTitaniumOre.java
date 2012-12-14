@@ -11,10 +11,10 @@ import net.minecraft.src.World;
 
 public class BlockTitaniumOre extends Block
 {
-	public BlockTitaniumOre(int i, int j, Material m, String n)
+	public BlockTitaniumOre(int blockID, int textureID, Material material, String name)
 	{
-		super(i, j, m);
-		this.setBlockName(n);
+		super(blockID, textureID, material);
+		this.setBlockName(name);
 		this.setHardness(1F);
 		this.setResistance(10F);
 		this.setCreativeTab(CreativeTabs.tabBlock);

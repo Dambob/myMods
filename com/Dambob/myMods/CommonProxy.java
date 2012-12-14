@@ -21,6 +21,7 @@ import net.minecraft.src.TileEntity;
 import net.minecraft.src.World;
 import net.minecraftforge.common.DungeonHooks;
 import net.minecraftforge.common.EnumHelper;
+import cpw.mods.fml.client.registry.RenderingRegistry;
 import cpw.mods.fml.common.network.IGuiHandler;
 import cpw.mods.fml.common.network.NetworkRegistry;
 import cpw.mods.fml.common.registry.GameRegistry;
@@ -34,32 +35,13 @@ public class CommonProxy
 	//Add blocks and items to world
 	public static void registerRenderInformation()
 	{	
-		
-		//Create blocks and register them
-		ModBlocks.init();
-		
-		//Create items
-		ModItems.init();
-		
-		//Register recipes
-		Recipes.init();
-		
-		//Register smelting recipes
-		SmeltingRecipes.init();
-		
-		TileEntities.init();
-		
-		//Register World Gen
-		GameRegistry.registerWorldGenerator(new FirstWorldGen());
-		
-		//Add Dungeon loot
-		DungeonHooks.addDungeonLoot(new ItemStack(ModItems.TitaniumIngot), 10, 1, 4);
-		
+				
 	};
 	
+	//Generates a number for the item material
 	public static int addArmor(String armor)
 	{
-		return 0;
+	    return 0;	
 	};
 	
 	

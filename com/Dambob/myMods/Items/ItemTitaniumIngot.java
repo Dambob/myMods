@@ -13,9 +13,14 @@ public class ItemTitaniumIngot extends Item
 	{
 		super(i);
 		
-		this.setItemName(n);
-		this.setIconIndex(0);
-		this.setCreativeTab(CreativeTabs.tabMaterials);
+		setItemName(n);
+		setIconIndex(0);
+		setCreativeTab(CreativeTabs.tabMaterials);
+		
+		//This line is used to create things like buckets
+		//Ie bucket of milk in recipie, milk is used but the bucket is returned
+		//'this' would be changed to bucket and the class that we're in would be bucketOfMilk
+		//setContainerItem(this);
 	};
 	
 	@SideOnly(Side.CLIENT)
